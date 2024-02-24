@@ -41,6 +41,7 @@ h1{
     color: #fff;
     background-color: #000;
     min-height: 25vh;
+    padding-bottom: 1rem;
 }
 
 .lower-part-con>h1{
