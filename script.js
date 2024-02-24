@@ -77,7 +77,10 @@ callFunction();
 
 document.querySelector("#btn").addEventListener("click", async () => {
   const text = document.querySelector("#search").value.trim();
-
+    if(text==""){
+        alert("Please Give Valid Input");
+        return;
+    }
   try {
     let res = await fetch(
       `https://api.geoapify.com/v1/geocode/search?text=${text}&apiKey=3c7c97d300d44f89b4ec7b263110bbb2`
